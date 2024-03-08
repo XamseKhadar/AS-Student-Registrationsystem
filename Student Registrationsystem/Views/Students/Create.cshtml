@@ -1,0 +1,28 @@
+﻿@model Students;
+
+<h3>Add New Student</h3>
+<br />
+
+<form method="post" asp-action="Create">
+
+    <div class="form-group">
+        <label class="form-label"> Student Name</label>
+        <input asp-for="std_Fullname" class="form-control" />
+    </div>
+
+    <br />
+    <div class="form-group">
+        <label class="form-label"> Student Phone</label>
+        <input asp-for="std_Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-label"> Student Age</label>
+        <input asp-for="std_age" class="form-control" />
+    </div>
+
+    <br />
+
+    <a class="btn btn-danger" asp-action="Index">Cancel</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+
+</form>
